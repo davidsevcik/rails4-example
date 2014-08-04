@@ -1,5 +1,5 @@
 # Rails Sample App on OpenShift #
-Quickstart rails application for openshift.
+Quickstart Rails 4 application for openshift.
 
 The easiest way to install this application is to use the [OpenShift
 Instant Application][template]. If you'd like to install it
@@ -71,7 +71,7 @@ in production.
     <th>Variable</th>
   </tr>
   <tr>
-    <td>config/initializers/secret_token.rb</td> 
+    <td>config/initializers/secret_token.rb</td>
     <td>Railsapp::Application.config.secret_token</td>
   </tr>
   <tr>
@@ -94,7 +94,7 @@ in production.
    ```
    +++ config/initializers/wrap_parameters.rb
    @@ -5,7 +5,7 @@
-    
+
      # Enable parameter wrapping for JSON. You can disable this by setting :format to an empty array.
       ActiveSupport.on_load(:action_controller) do
       -  wrap_parameters format: [:json]
@@ -120,7 +120,7 @@ in production.
 
     ```
     cd railsapp
-    git remote add upstream -m master git://github.com/openshift/rails-example.git
+    git remote add upstream -m master git://github.com/davidsevcik/rails4-example.git
     git pull -s recursive -X theirs upstream master
     ```
 
